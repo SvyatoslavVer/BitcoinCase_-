@@ -8,7 +8,7 @@ What we have to have in TITLE:
   
   VER - version of block sheme.
   
-  PREV-BLOCK - hash of previous block in chain. Depends on previous block hash.
+  PREV_BLOCK - hash of previous block in chain. Depends on previous block hash.
   
   MRKL_ROOT - Mercle root - list of transactions hashes. First calculate hash of transaction, next is hash of block.
   
