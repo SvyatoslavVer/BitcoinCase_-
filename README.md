@@ -1,6 +1,7 @@
 # BitcoinCase_-
 Bitcoin Development
 Fist we have to make a Bitcon block. It consists with title and transaction parts.
+
 What we have to have in TITLE:
 
   HASH - SHA-256 title hash. It's a random value, calculating time can be predicted. Hash calculates without transaction hash.
