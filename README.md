@@ -60,7 +60,9 @@ The next step is to create a Wallet with out tokens inside.
 Wallet:
 
   The simplest wallet is a program which performs all three functions: it generates private keys, derives the corresponding public keys, helps distribute those public keys as necessary, monitors for outputs spent to those public keys, creates and signs transactions spending those outputs, and broadcasts the signed transactions.
+  
   [Create Parens Private Key] -> [Derive Parent Public Keys] -> [Derive Child Public Keys] -> [Distribute Public Keys] -> [Monitor For Outputs] -> [Create Unsigned Txes] -> [Sign Txes] -> [Broadcast Txes].
+  
   Parent Private and Public keys create child private and public keys. Bitcoin wallets at their core are a collection of private keys. We can make the same.
   Private keys are what are used to unlock satoshis from a particular address. In Bitcoin, a private key in standard format is simply a 256-bit number, between the values:
 
