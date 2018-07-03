@@ -5,6 +5,7 @@ Fist we have to make a Bitcon block. It consists with title and transaction part
 What we have to have in TITLE:
 
   HASH - SHA-256 title hash. It's a random value, calculating time can be predicted. Hash calculates without transaction hash.
+  
   VER - version of block sheme.
   PREV-BLOCK - hash of previous block in chain. Depends on previous block hash.
   MRKL_ROOT - Mercle root - list of transactions hashes. First calculate hash of transaction, next is hash of block.
