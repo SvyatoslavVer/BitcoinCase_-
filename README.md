@@ -2,7 +2,6 @@
 Bitcoin Development
 Fist we have to make a Bitcon block. It consists with title and transaction parts.
 What we have to have in TITLE:
-{
 
   HASH - SHA-256 title hash. It's a random value, calculating time can be predicted. Hash calculates without transaction hash.
   VER - version of block sheme.
@@ -14,10 +13,10 @@ What we have to have in TITLE:
   N_TX - nubers of transaction in block.
   SIZE - byte size of block.
   
- }
+ 
  What we have to have in TRANSACTION:
  
- {
+ 
   HASH - hash of full transaction. Hashing twice. First, when we calculate Transaction hash. Second, when we calculate block hash. Each block refers to previous block has, each transaction refers to previous transaction hash.
   VER - version of transaction.
   VIN_SZ - number of previous transaction, out of which refers to new addresses where our Token was spent. One or more.
@@ -35,11 +34,11 @@ What we have to have in TITLE:
       VALUE - count of Token that we are going to send. To not to loose Tokens we have to write value of outgoing tokens and value of residue.
       SCRIPTPUBKEY - Specific script language in Bitcoin and hash code of recipient's public key and ECDSA signature that was made with recipient's private key.
     }
-  }
+  
 First we create structure with that fields that includes main infromation about block and transactions.
 The next step is to create a Wallet with out tokens inside.
 Wallet:
-{
+
   The simplest wallet is a program which performs all three functions: it generates private keys, derives the corresponding public keys, helps distribute those public keys as necessary, monitors for outputs spent to those public keys, creates and signs transactions spending those outputs, and broadcasts the signed transactions.
   [Create Parens Private Key] -> [Derive Parent Public Keys] -> [Derive Child Public Keys] -> [Distribute Public Keys] -> [Monitor For Outputs] -> [Create Unsigned Txes] -> [Sign Txes] -> [Broadcast Txes].
   Parent Private and Public keys create child private and public keys. Bitcoin wallets at their core are a collection of private keys. We can make the same.
@@ -67,10 +66,10 @@ Wallet:
 
 The process is easily reversible, using the Base58 decoding function, and removing the padding.
   Data about our tokens we can have inside of some DataBase with numbers of all tokens that we create. Wallet have an object(Token) with each coins inside.
-}
+
 Payment Processing:
-{
+
   [New Order] -> [Price Order in our Token] -> [Verify Payment and Fulfill Order] -> [Issue Refund (if we need that)] -> [Diburse Income (if we want to take money from the differences with courses)]
-}
+
 
 Finally it looks like we a making Tokens inside our network, generating orders to pay for someone or take money from someone, then we make a transaction inside wallet( it have all information about numers of Tokens, it cost and other information), put this order to transaction, then to block and send to address, after confirm payment or take back our tokens. All parts of cryptography will be inside wallets of users. 
