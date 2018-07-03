@@ -38,6 +38,7 @@ What we have to have in TITLE:
   
 First we create structure with that fields that includes main infromation about block and transactions.
 The next step is to create a Wallet with out tokens inside.
+
 Wallet:
 
   The simplest wallet is a program which performs all three functions: it generates private keys, derives the corresponding public keys, helps distribute those public keys as necessary, monitors for outputs spent to those public keys, creates and signs transactions spending those outputs, and broadcasts the signed transactions.
