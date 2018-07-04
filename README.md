@@ -76,6 +76,8 @@ Wallet:
   
   difficulty = difficulty_1_target / current_target 
   
+  difficulty = max_target / current_target
+  
   Где difficulty – сложность, а target – 256-битное число.
   Difficulty_1_target может принимать различные значения. Традиционно это хэш, 32 первых бита которого являются 0, остальную часть составляют единицы (это также называется pdiff или pool difficulty). Bitcoin-протокол представляет цель (target), как тип с плавающей точкой и ограниченной точностью.
 
