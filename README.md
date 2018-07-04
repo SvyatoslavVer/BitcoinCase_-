@@ -68,6 +68,17 @@ Wallet:
 
 0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2256-1 values. The range is governed by the secp256k1 ECDSA encryption standard used by Bitcoin. We can mae the same.
 
+  The formula to calculate the amount of time it takes on average to win a block is 
+  
+  Average time in hours = difficulty * 2^32 / (3,600 * hash rate per second) 
+  
+  Difficulty = average time in hours * (3600 * hash rate per second)/ 2^32 = "Среднее время нахождения блока * (3600 * скорость хэширования в секунду)/ 2^32"
+  
+  difficulty = difficulty_1_target / current_target 
+  
+  Где difficulty – сложность, а target – 256-битное число.
+  Difficulty_1_target может принимать различные значения. Традиционно это хэш, 32 первых бита которого являются 0, остальную часть составляют единицы (это также называется pdiff или pool difficulty). Bitcoin-протокол представляет цель (target), как тип с плавающей точкой и ограниченной точностью.
+
   In order to make copying of private keys less prone to error, Wallet Import Format may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
 
     Take a private key.
