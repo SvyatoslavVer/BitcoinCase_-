@@ -108,3 +108,24 @@ Payment Processing:
 
 
 Finally it looks like we a making Tokens inside our network, generating orders to pay for someone or take money from someone, then we make a transaction inside wallet( it have all information about numers of Tokens, it cost and other information), put this order to transaction, then to block and send to address, after confirm payment or take back our tokens. All parts of cryptography will be inside wallets of users. 
+
+Есть 3 способа создания своей криптовалюты.
+Способ 	Плюсы 	Минусы
+С нуля 	Возможность внедрить принципиально новые технологии. 	
+
+    Большие расходы на грамотных программистов.
+    Не менее года уйдет на разработку и тестирование.
+    Код не подкреплен авторитетом уже раскрученной платформы.
+
+На основе чужого кода, но с редактированием или дописыванием 	Возможность внести незначительные инновации. 	
+
+    Расходы на разработчика. Нужен программист уровня от миддла, который специализируется именно на том языке, на котором написан изначальный код (обычно это Java или C++)
+    Нужно тестирование.
+
+На чужом коде, с помощью сервисов по генерации криптовалют 	
+
+    Быстро, можно сделать запуск буквально за пару часов.
+    Бесплатно. Даже логотип своей криптовалюты можно нарисовать самому в Пейнте.
+    Подходит для обучения основам блокчейна подростков и детей старшего возраста.
+
+	Маловероятно, что монета, в которой нет ничего нового, будет иметь успех.
