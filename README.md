@@ -110,8 +110,9 @@ Payment Processing:
 Finally it looks like we a making Tokens inside our network, generating orders to pay for someone or take money from someone, then we make a transaction inside wallet( it have all information about numers of Tokens, it cost and other information), put this order to transaction, then to block and send to address, after confirm payment or take back our tokens. All parts of cryptography will be inside wallets of users. 
 
 Есть 3 способа создания своей криптовалюты.
- 	Плюсы 	Минусы
+ 	
 С нуля 	
+
    Плюсы :
 	
 	Возможность внедрить принципиально новые технологии. 	
@@ -123,6 +124,7 @@ Finally it looks like we a making Tokens inside our network, generating orders t
     Код не подкреплен авторитетом уже раскрученной платформы.
 
 На основе чужого кода, но с редактированием или дописыванием 	
+
    Плюсы :
 
 	Возможность внести незначительные инновации. 	
@@ -132,6 +134,7 @@ Finally it looks like we a making Tokens inside our network, generating orders t
     Нужно тестирование.
 
 На чужом коде, с помощью сервисов по генерации криптовалют 
+
    Плюсы :
 
     Быстро, можно сделать запуск буквально за пару часов.
